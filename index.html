@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/spotify.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>mySpotify 🎵🎧</title>
+  </head>
+  <body>
+    
+    <div style="width: 100%; height: 100vh; background-color: black; display:flex">
+        <div class="col-3 m-2">
+            <div class="row ms-2">
+            <div class="card mt-2" 
+            style="width: 100%; background-color:#121212; color:white">
+                <div class="card-body">
+                  <p>
+                    <i class="bi bi-spotify fs-3"></i>
+                    <span class="ms-1">Spotify</span>
+                  </p>
+                  <p class="iconoInicio">
+                    <i class="bi bi-house fs-5"></i>
+                    <span class="ms-3">Inicio</span>
+                  </p>
+                  <p class="iconoInicio">
+                    <i class="bi bi-search fs-5"></i>
+                    <span class="ms-3">Buscar</span>
+                  </p>
+                </div>
+            </div>
+              </div>
+
+              <div class="row ms-2">
+                <div class="card mt-2" 
+                style="width: 100%; background-color:#121212"
+                >
+                    <div class="card-body">
+                        <div class="row">
+                        <div class="col-10">
+                        <p class="iconoInicio" style="width: 90%;">
+                            <i class="bi bi-collection fs-5"></i>
+                            <span class="ms-3">Tu biblioteca</span>
+                          </p>
+                    </div>
+                    <div class="col-2 iconoInicio">
+                        <i class="bi bi-plus-circle fs-5"></i>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="card mt-2" 
+                    style="width: 100%; background-color:#242424; color:white"
+                    >
+                    <div class="card-body">
+                        <p class="fs-5 fw-normal">Empieza a crear tus playlist, nosotros te ayudamos!!! </p>
+                        <p class="fs-6 fw-light">¡Unete a premium!</p>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+
+                  <div class="row ms-2">
+                    <div class="card mt-2" 
+                    style="width: 100%; background-color:#121212"
+                    >
+                        <div class="card-body">
+                          CARD 
+                        </div>
+                    </div>
+                      </div>
+                      </div>
+        </div>
+        <div class="col-9 m-2">
+          <div class="navTop m-1">
+            <div class="actions">
+              <div class="left">
+                <i class="bi bi-chevron-left"></i>
+              </div>
+              <div class="right">
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </div>
+            <div class="buttons">
+              <span class="register">
+                Registrate
+              </span>
+              <span class="login rounded-pill">
+                Iniciar Sesion
+              </span>
+            </div>
+          </div>
+          <div class="content m-1">
+            <div class="titulos"></div>
+            <div class="row" id="playlist">
+            </div>
+          </div>
+          </div>
+        </div>
+
+        
+          <template id="cardPlayList">
+                <div class="card m-2 spotyCard" style="width: 18rem; background-color: #181818;">
+                  <img src="..." class="card-img-top mt-2" alt="...">
+                  <div class="greenCircle" onclick="openSpoty(event)">
+                    <i class="bi bi-play-fill"></i>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title"
+                        style="color: white;"
+                        onclick="openPlayList(event)"
+                    >
+                        Card title
+                    </h5>
+                    <p class="card-text" style="color: #A7A7A7;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                  </div>
+                </div>        
+          </template>
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="./js/app.js"></script>
+  </body>
+</html>
